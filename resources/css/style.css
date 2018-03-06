@@ -1,0 +1,474 @@
+
+
+/*--------------------------------------*/
+/* BASIC SETUP */
+/*--------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color: #fff;
+    font-family: 'Circular Web', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*--------------------------------------*/
+/* RESUABLE COMPONENTS */
+/*--------------------------------------*/ 
+
+.row{
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 80px 0;
+}
+
+/* ------HEADING--------*/
+
+h1,h3,h2{
+    text-align: center;
+    letter-spacing: -.02em;
+}
+h1{
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-size: 290%;
+}
+
+h2{
+    font-size: 275%;
+    padding: 35px 0;
+    font-weight: 550;
+}
+
+h3{
+    margin-bottom: 25px;
+    font-size:120%;
+    font-weight: 300;
+}
+
+
+
+/* ------LINKS--------*/
+
+a:link,
+a:visited{
+    text-decoration: none;
+    color:#fff;
+}
+
+/* ------BUTTONS--------*/
+
+.btn:link,
+.btn:visited{
+    background-color: #e82b62;
+    padding: 20px 40px;
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+
+.btn:active,
+.btn:hover{
+    background-color: #CE144A;
+}
+
+/* ------ICONS--------*/
+
+.icon-small{
+    display: inline-block;
+    color: #fff;
+    font-size: 150%;
+    position: absolute;
+    top: -2px;
+}
+
+.long-copy-black,
+.long-copy-white{
+    text-align: center;
+    line-height: 1.6em;
+    font-size: 90%;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.long-copy-black{
+    color: #232323;
+}
+
+.long-copy-white{
+    color: #fff;
+}
+
+/*--------------------------------------*/
+/* HEADER */
+/*--------------------------------------*/ 
+
+
+header{
+    position:fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.logo{
+    float:left;
+    width: 33px;
+    height: auto;
+    margin-top: 17px;
+    margin-left: 10px;
+}
+.nav{
+    float: right;
+    list-style: none;
+}
+.nav li{
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 20px;
+    font-size:90%;
+    position: relative;
+}
+.nav li:last-child{
+    margin-right: 0;
+}
+
+.dropDownMenu{
+    
+    width: 220px;
+    margin-left: 650px;
+    margin-top: 10px;
+    z-index: 3;
+    display: none;
+     
+}
+.menuLink li {
+    background-color: rgb(236, 233, 231);
+    padding: 10px 20px;
+    line-height: 2em;
+    list-style: none;
+    transition: background-color 0.2s;
+}
+.menuLink li a:link,
+.menuLink li a:visited{
+    color: #000;
+    font-size: 90%;
+    transition: color 0.2s;
+}
+.menuLink li a:active,
+.menuLink li a:hover{
+    
+    color: #fff;
+    
+}
+.menuLink li:active,
+.menuLink li:hover{
+    background-color: #037EF3;
+    
+}
+
+
+/*--------------------------------------*/
+/* title */
+/*--------------------------------------*/ 
+
+.section-title{
+    background-color: #232323;
+    height: 480px;
+}
+.title-div{
+    margin-top: 40px;
+    position: relative;
+
+}
+
+.btn1{
+    position: absolute;
+    left:39%;
+    top:115%;
+}
+
+/*--------------------------------------*/
+/* slider */
+/*--------------------------------------*/ 
+
+.section-slider{
+    padding: 0;
+    position: relative;
+}
+
+.brandBackground{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.card{
+    position: absolute;
+    left: 125px;
+    bottom: -140px;
+}
+.cardBack,
+.cardFront{
+    width: 358px;
+    height: 209px;
+    float: left;
+    margin: 0 7px;
+}
+
+
+/*--------------------------------------*/
+/* UNIQUE BRAND */
+/*--------------------------------------*/
+
+.unique-brand{
+    color: #282828;
+    padding-top: 200px;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.long-copy{
+    text-align: center;
+    color: #232323;
+    line-height: 1.6em;
+    font-size: 90%;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.btn2{
+    padding: 60px 0 100px 0;
+    position: absolute;
+    left: 400px;
+    
+}
+
+/*--------------------------------------*/
+/* FIRST KIND */
+/*--------------------------------------*/
+
+.section-kind{
+    background-color: #232323;
+    padding-top: 65px;
+    padding-bottom: 100px;
+    margin-top: 223px;
+}
+
+/*--------------------------------------*/
+/* GENERATOR*/
+/*--------------------------------------*/
+
+
+.section-photo-generated{
+    background-image: url(59d14895a992ae00015f9eb4_placeit.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+}
+
+.img-generator{
+    width: 437px;
+    height: auto;
+    position: relative;
+    left: 50%;
+    box-shadow: 14px 14px 85px 7px rgba(0,0,0,.65);
+}
+
+/*--------------------------------------*/
+/* OUTCOME*/
+/*--------------------------------------*/
+
+.section-outcome{
+    background-color: #232323;
+    padding-top: 65px;
+    padding-bottom: 100px;
+}
+
+.special-link .long-copy-white{
+    color: #E82B62;
+    position: relative;
+    left:30%;
+    top:10px;
+}
+
+/*--------------------------------------*/
+/* HALOBIKE IMAGE*/
+/*--------------------------------------*/
+
+.section-halobike{
+    background-color: #232323;
+    position: relative;
+    z-index: 10;
+    padding:0px; 
+}
+
+.img-halobike{
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 30;
+}
+
+.white-block{
+    background-color: #fff;
+    width: 100%;
+    height: 26.45vw;
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+}
+
+
+/*--------------------------------------*/
+/* BRAND WAITING*/
+/*--------------------------------------*/
+
+.section-brand-waiting{
+    padding: 35px 0 91px 0;
+}
+
+.section-brand-waiting h2{
+    color: #282828;
+}
+
+
+/*--------------------------------------*/
+/* SMALL SLIDER */
+/*--------------------------------------*/
+
+.small-slider{
+    padding: 0;
+    height: 285px;
+}
+
+.img-slider1,
+.img-slider2{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+/*--------------------------------------*/
+/* FREE */
+/*--------------------------------------*/
+
+.section-free{
+    padding: 100px 0;
+    color: #282828;
+}
+
+.section-free .btn2{
+    padding-top: 56px;
+}
+
+
+/*--------------------------------------*/
+/* TESTIMONIAL */
+/*--------------------------------------*/
+
+.section-testimonial{
+    color:#000;
+    padding: 0;
+    padding-top: 120px;
+    height: 504.25px;
+}
+
+
+.testimonial{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+.testimonial-left{
+    background-color: #ECE9E7; 
+     color: #e82b62;
+}
+
+.testimonial-right{
+    background-color: #E82B62;
+    color: #fff;
+}
+.img-logo1,
+.img-logo2{
+    width: 20%;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    display:block;
+    margin: 0 auto;
+}
+
+.test-text{
+   
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 35px 75px 35px;
+}
+.test-person{
+    font-size: 75%;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/*--------------------------------------*/
+/* FOOTER */
+/*--------------------------------------*/
+
+footer{
+    background-color: #282828;
+    padding: 75px 0;
+}
+
+.emblem-logo{
+    width: 130px;
+    height: auto;
+    padding-bottom: 35px;
+    vertical-align: middle;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-nav{
+    display: block;
+    font-size: 75%;
+    text-align: center;
+    padding-bottom: 35px;
+}
+.footer-nav div{
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.social-media{
+    display: block;
+    text-align: center;
+}
+.social-media img{
+    width: 30px;
+    height: auto;
+    display: inline-block;
+}
+.social-media a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
