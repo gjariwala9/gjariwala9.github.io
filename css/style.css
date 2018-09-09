@@ -195,8 +195,8 @@ p{
 }
 .icons i{
     font-size: 1.67rem;
-    padding-left: 30px;
-    padding-right: 20px;
+    padding-left: 1.67rem;
+    padding-right: 1.11rem;
     color: #bababa;
     font-size-adjust: auto;
 }
@@ -214,24 +214,30 @@ p{
 
 
 @media all and (min-width: 960px) {
-    html{
+    html,body{
         font-size: 18px;
     }
 }
  
 @media all and (max-width: 959px) and (min-width: 600px) {
-    html{
+    html,body{
         font-size: 16px;
     }
 }
  
 @media all and (max-width: 599px) and (min-width: 320px) {
-    html{
+    html,body{
         font-size: 12px;
     }
  
 }
 
+@media all and (max-width: 319px)  {
+    html,body{
+        font-size: 10px;
+    }
+ 
+}
 
 
 
