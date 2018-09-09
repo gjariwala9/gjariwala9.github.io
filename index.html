@@ -1,185 +1,174 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="vendors/css/normalize.css">
-        <link type="text/css" rel="stylesheet" href="vendors/css/grid.css">
-        <link type="text/css" rel="stylesheet" href="vendors/css/ionicons.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link type="text/css" rel="stylesheet" href="resources/css/style.css">
-        <title>Emblem. Brand &#38; Logo Design</title>
-    </head>
-    <body>
-        <header>
+<head>
+
+    <!-- IMPORTANT META TAG -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>Gaurav Jariwala</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- IonIcons -->
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body>
+
+    <!-- Home -->
+    <section id="home" class="text-center">
+        <div id="home-bg"></div>
+        <div id="overlay"></div>
+        <!-- home-content -->
+        <div id="home-content">
+            <h1 id="home-heading-1">Gaurav Jariwala</h1>
+            <h2 id="home-heading-2">Journey to become a <span>Web Developer</span></h2>
+            <a href="#project" title="Projects" class="btn btn-general btn-home" role="button">View Projects</a>
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="project">
+
+        <div class="container">
             <div class="row">
-                <img src="resources/img/EmblemLogo.png" alt="Emblem Logo" class="logo">
-                <ul class="nav">
-                    <li><a href="#">Resources</a><i class="material-icons icon-small" id="downArrow">keyboard_arrow_down</i></li> 
-                    <li><a href="#">Get Started</a></li> 
-                    <li><a href="#">Sign In</a></li> 
-                </ul>
+                <h1 id="project-heading" class="col-md-12 text-center">Projects</h1>
             </div>
-            <div class="dropDownMenu" id="dropDownMenu">
-                <ul class="menuLink">
-                    <div class="row"><li><a href="#">Brand Inspiration</a></li></div>
-                    <div class="row"><li><a href="#">Emblem Logo Creator</a></li></div>
-                    <div class="row"><li><a href="#">Brand Ingredients</a></li></div>
-                    <div class="row"><li><a href="#">Blog</a></li></div>
-                </ul>
+            <div class="row">
+                <p class="col-md-12 text-center">Here are some projects done by me while learning Web Development.</p>
+            </div>
+        </div>
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                
+                <div class="item active site-img">
+                    <a href="emblem_omnifood/omnifood.html" target="_blank">
+                    <img src="img/omnifood.jpg"  alt="Omnifood">
+                       
+                    <div class="carousel-caption">
+                        <h5>Omnifood</h5>   
+                        <p>(HTML + CSS)</p>
+                    </div>
+                    </a> 
+                </div>
+                
+                <div class="item site-img">
+                    <a href="emblem_omnifood/emblem.html" target="_blank">
+                    <img src="img/emblem.jpg" alt="Emblem">
+                    <div class="carousel-caption">
+                        <h5>Emblem</h5>   
+                        <p>(HTML + CSS)</p>
+                    </div>
+                        </a>
+                </div>
+                <div class="item site-img">
+                    <a href="bootstrap/bootstrap.html" target="_blank">
+                    <img src="img/bootstrap.jpg" alt="My Awesome App">
+                    <div class="carousel-caption">
+                        <h5>My Awesome App</h5>   
+                        <p>(HTML + CSS + Bootstrap)</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="item site-img">
+                    <a href="javascript/javascript.html" target="_blank">
+                    <img src="img/javascript.jpg" alt="Reaction tester">
+                    <div class="carousel-caption">
+                        <h5>Reaction Tester</h5>   
+                        <p>(HTML + CSS + Javascript)</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="item site-img">
+                    <a href="jquery/jquery.html" target="_blank">
+                    <img src="img/jquery.jpg" alt="CodePlayer">
+                    <div class="carousel-caption">
+                        <h5>CodePlayer</h5>   
+                        <p>(HTML + CSS + Jquery)</p>
+                    </div>
+                    </a>
+                </div>
             </div>
 
-        </header>
-        <section class="section-title clearfix">
-            <div class="title-div">
-                <div class="row">
-                    <h1>Build a beautiful brand</h1>
-                </div>   
-                <div class="row">
-                    <h3>Create a professional brand in minutes</h3>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <br><br>
+    </section>
+
+    <footer>
+
+        <div class="container footer-content">
+                <div class="row text-center">
+                    <h2 class="col-md-12 footer-heading">Gaurav Jariwala</h2>
                 </div>
-                <div class="btn1">
-                    <a href="#" class="btn">Get Started Now</a>
+                <div class="row text-center">
+                    <p class="col-md-12">Contact me</p>
                 </div>
-            </div>
-        </section>
-        
-        <section class="section-slider clearfix">
-            <div>
-                <img src="resources/img/brandPreviewBackground.png" alt="Brand Preview" class="brandBackground">
-                <div class="card">
-                    <img src="resources/img/businessCardBack.jpg" alt="Business Card Back" class="cardBack">
-                    <img src="resources/img/businessCardFront.jpg" alt="Bussiness Card Front" class="cardFront">
+                <div class="row text-center">
+                    <p class="col-md-12">Email: gjariwala9@gmail.com</p>
                 </div>
-            </div>
-        </section>
-        
-        <section class="unique-brand clearfix">
-            <div class="row">
-                <h2>Easily create your own unique brand</h2>
-            </div>
-            <div class="row">
-                <p class="long-copy">Whether you have an existing logo or are starting from scratch, Emblem gives you the power to create a beautiful brand. Get started by uploading a logo or using our online logo builder. Once you're in Emblem, you can customize the basic elements of your visual identity: logo, color, typography, pattern and photography. With these elements Emblem generates a beautiful brand book for your business.</p>
-            </div>
-            <div class="btn2">
-                    <a href="#" class="btn">Get Started</a>
-            </div>
-        </section>
-        <section class="section-kind clearfix">
-            <div class="row">
-                <h2>The first of its kind</h2>
-            </div>
-            <div>
-                <p class="long-copy-white">Emblem is not your typical one-and-done logo generator. Emblem utilizes a combination of user input and design automation to create a professional brand book that you can tweak, edit, and adjust to your liking. Once you're done, share your brand with the world using your custom-made profile pictures, cover photos, and business cards.</p>
-            </div>
-        </section>      
-        
-        <section class="section-photo-generated clearfix">
-            <div>
-                <img src="resources/img/Artboard%201-100-p-800.jpeg" alt="Color pelete genrator" class="img-generator">
-            </div>
-        </section>
-        
-        <section class="section-outcome clearfix">
-            <div class="row">
-                <h2>What you get</h2>
-            </div>
-            <div class="row">
-                <p class="long-copy-white">Emblem let's you create your brand for free. Pick your font, adjust your colors, add an icon, have some fun. When you're ready to save your brand, choose from one of our flexible payment options to get full access to your brand book and download your logo and other business assets.</p>
-            </div>
-            <div class="row special-link">
-                <a href="#" class="long-copy-white">Learn more about how our brand creator works</a>
-            </div>
-        </section>
-        
-        <section class="section-halobike clearfix">
-            <img src="resources/img/Untitled-2-p-1080.png" alt="HALOBIKE" class="img-halobike">
-            <div class="white-block"></div>
-        </section>
-        
-        <section class="section-brand-waiting clearfix">
-            <div class="row">
-                <h2>Your brand is waiting</h2>
-            </div>
-            <div class="row">
-                <p class="long-copy-black">You deserve a brand that looks as professional as you are. Emblem will help you create a brand that is uniquely yours, and then help you use it across a variety of business materials.</p>
-            </div>
-        </section>
-        
-        <section class="small-slider clearfix">
-            <div >
-                <img src="resources/img/slider1.png" alt="slider1" class="img-slider1">
-                <img src="resources/img/slider2.png" alt="slider2" class="img-slider2">
-            </div>
-        </section>
-        
-        <section class="section-free clearfix">
-            <div class="row">
-                <h2>Get started for free</h2>
-            </div>
-            <div class="row">
-                <p class="long-copy-black">Only pay when you are ready to download your brand assets.</p>
-            </div>
-            <div class="btn2">
-                    <a href="#" class="btn">Get Started</a>
-            </div>
-        </section>
-        
-        <section class="section-testimonial clearfix">
-            <div class="testimonial testimonial-left">
-                <div class="row">
-                    <img src="resources/img/Untitled-2.png" alt="Caravan Logo" class="img-logo1">
+                <div class="row text-center">
+                    <p class="col-md-12">Mo. No.: (+91) 9913612406</p>
                 </div>
-                <div class="row">
-                    <p class="test-text">“Emblem puts me in control of my businesses brand which saves me time and money. Who wouldn’t appreciate that!</p>
+                <div class="text-center icons">
+                    <a href="https://www.linkedin.com/in/gaurav-jariwala-a43573160/" target="_blank"><i class="fa fa-linkedin"></i> </a>
+                    <a href="https://stackoverflow.com/users/8232483/gjariwala9?tab=profile" target="_blank"><i class="fa fa-stack-overflow"></i> </a>
+                    <a href="https://github.com/gjariwala9" target="_blank"><i class="fa fa-github"></i> </a>
                 </div>
-                <div class="row">
-                    <p class="test-person">Brooke Farrell / Owner</p>
-                </div>
+        </div>    
+        <div class="container madeBy">
+            <div class="row text-center">
+                <p>Made by Gaurav Jariwala.</p>
             </div>
-            <div class="testimonial testimonial-right">
-                <div class="row">
-                    <img src="resources/img/PHlogo.png" alt="Product Hunt Logo" class="img-logo2">
-                </div>
-                <div class="row">
-                    <p class="test-text">“You are democratizing the brand building process. You are helping a lot of people. This makes me happy.”</p>
-                </div>
-                <div class="row">
-                    <p class="test-person">Edreece Arghandiwal / Creative Entrepreneur</p>
-                </div>
-            </div>
-        </section>
-        
-        <footer class="clearfix">
-            <div class="row">
-                <img src="resources/img/logo.png" alt="Emblem Logo" class="emblem-logo">
-            </div>
-            <div class="row footer-nav">
-                <a href="#">Home</a>
-                <div>•</div>
-                <a href="#">Blog</a>
-                <div>•</div>
-                <a href="#">Help Center</a>
-                <div>•</div>
-                <a href="#">Legal</a>
-                <div>•</div>
-                <a href="#">Contact</a>
-            </div>
-            <div class="row social-media">
-                <a href="#" class="social-link"><img src="resources/img/facebook.png" alt="faceboook"></a>
-                <a href="#" class="social-link"><img src="resources/img/instagram.png" alt="instagram"></a>
-                <a href="#" class="social-link"><img src="resources/img/medium.png" alt="Medium"></a>
-            </div>
-        </footer>
-        
-        <section class="next-website">
-			<p><a href="omnifood.html" target="_blank" style="color:black;">Click Here For Second Website</a></p>
-		</section>
-        <script type="text/javascript">
-                 document.getElementById("downArrow").onclick = function(){
-                     //display is ser form none to block
-                    document.getElementById("dropDownMenu").style.display = "none";
-                 }           
-        </script>                
-    </body>
-    
+        </div>    
+
+    </footer>
+
+
+
+
+    <!-- Jquery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
 </html>

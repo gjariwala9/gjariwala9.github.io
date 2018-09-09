@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+
+
+    <style>
+
+        .jumbotron{
+            background-image: url(background.jpg);
+            color: white;
+            text-align: center;
+            border-radius: 0;
+            margin-top: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;https://github.com/brackets-beautify/brackets-beautify
+            https://github.com/brackets-beautify/brackets-beautify
+
+        }
+          #email{
+              width: 500px;
+          }
+          .signUp{
+              display: inline-block;
+              margin:0 auto;
+          }
+          #appSummary{
+              text-align: center;
+              margin-bottom: 50px;
+              margin-top: 50px;
+          }
+          #appStoreIcon{
+              width: 200px;
+          }   
+          #footer{
+              text-align: center;
+              padding-top: 50px;
+              background-color: #45B2D1;
+              margin-top: 50px;
+              padding-bottom: 50px;
+          }
+          body{
+              position: relative;
+          }
+      </style>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+        <a class="navbar-brand" href="#">MyApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#jumbotron">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#appSummary">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#footer">Download MyApp</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="email" placeholder="Email">
+                <input class="form-control mr-sm-2" type="password" placeholder="Password">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="jumbotron" id="jumbotron">
+        <h1 class="display-4">My Awesome App!</h1>
+        <p class="lead">This is why YOU should download this App!</p>
+        <hr class="my-4">
+        <p>Want to know more? Join our mailing list!</p>
+
+        <div class="signUp">
+            <form class="form-inline" id="SignUpForm">
+
+                <label class="sr-only" for="inlineFormInputName2">Name</label>
+                <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+                <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername2 email" placeholder="Your email">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Sign up</button>
+
+            </form>
+        </div>
+
+    </div>
+    <div class="container" id="appSummary">
+        <div class="row">
+            <div class="col">
+                <h1>Why This App Is Awesome</h1>
+                <p class="lead">Summary, once again, of your app's awesomeness</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="ales-nesetril-734016-unsplash.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-anchor"></i> Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="ales-nesetril-734016-unsplash.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fab fa-android"></i> Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="ales-nesetril-734016-unsplash.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fab fa-app-store"></i> Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="row">
+            <div class="col">
+                <h2>Download the app!</h2>
+                <p class="lead">Really, why should I download this app??</p>
+                <p><a href="#"><img id="appStoreIcon" src="appStoreLogo.png"></a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
