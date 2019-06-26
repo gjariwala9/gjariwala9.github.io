@@ -17,6 +17,7 @@ body {
     font-family: OpenSans, sans-serif;
     color: #212226;
     font-size: 18px;
+    scroll-behavior: smooth;
 }
 
 h1,
