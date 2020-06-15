@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- IMPORTANT META TAG -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>Gaurav Jariwala</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- IonIcons -->
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body>
+
+	<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <a class="navbar-brand" href="index.html">Gaurav Jariwala</a>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="research.html">Publications</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resume/Resume_Gaurav.pdf" target="_blank">Resume</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="text-center">
+        <div id="project-bg"></div>
+        <div id="overlay"></div>
+        <!-- home-content -->
+        <div id="home-content">
+            <h1 id="home-heading-1">Projects</h1>
+        </div>
+    </section>
+
+    <section id="projects">
+        <br><br>
+        <div class="container">
+            <div class="row each-project">
+                <div class="col-md-5">
+                    <a href="https://github.com/gjariwala9/DS_Salary_Predictor" target="_blank">
+                        <img src="projects/project-1/positions_by_state.png" alt="Bar Chart" class="project-img">
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <a href="https://github.com/gjariwala9/DS_Salary_Predictor" target="_blank" class="project-title"><h4>Data Science Salary Estimator</h4></a>
+                    <p class="project-content">Created a tool that estimates data science salaries (MAE ~ $ 11K) to help data scientists negotiate their income when they get a job. Scraped over 1000 job descriptions from glassdoor using python and selenium Engineered features from the text of each job description to quantify the value companies put on python, excel, aws, and spark. Optimized Linear, Lasso, and Random Forest Regressors using GridsearchCV to reach the best model.</p>
+                    <a href="https://github.com/gjariwala9/DS_Salary_Predictor" class="btn btn-general btn-github" role="button" target="_blank"><i class="fa fa-github"></i><span class="git-text">GitHub Repo</span></a>
+                </div>
+            </div>
+            <div class="row each-project">
+                <div class="col-md-5">
+                    <a href="https://github.com/gjariwala9/Analysis-and-Prediction-of-Stock-market-trends-Using-Deep-Learning" target="_blank">
+                        <img src="projects/project-2/project-2.png" alt="Bar Chart" class="project-img">
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <a href="https://github.com/gjariwala9/Analysis-and-Prediction-of-Stock-market-trends-Using-Deep-Learning" class="project-title" target="_blank"><h4>Analysis and Prediction of stock market trends</h4></a>
+                    <p class="project-content">The project is desgined as 2nd opinion tool for stock market investments strategy. The users needs to do his/her own research on a stock or a company before using this product. This is a 3 step product: STEP 1: Predicting stock value for tomorrow by analysing historic data of a particular stock. Recurrent Neural Network (RNN) model is used for this system. Stock historic data is downloaded from yahoo finance. STEP 2: Verify the trend of the stock based on external factor and news which cannot be analysed using historic data. Both Support Vector Machine and Naive Bayes system are used. News headlines are web scrapped from moneycontrol.com. STEP 3: Use Risk Analysis System to find out to which cluster your stock belongs to and check the movement of other stock in that cluster, since stocks in a particular cluster are related to each other their movement is interdependent. Kmeans clustering is used to create this module. Data is 10 year historic data for (Open price - Close price) for a particular day.</p>
+                    <a href="https://github.com/gjariwala9/Analysis-and-Prediction-of-Stock-market-trends-Using-Deep-Learning" class="btn btn-general btn-github" role="button" target="_blank"><i class="fa fa-github"></i><span class="git-text">GitHub Repo</span></a>
+                </div>
+            </div>
+            <div class="row each-project">
+                <div class="col-md-5">
+                    <a href="https://github.com/gjariwala9/Flask_Blog" target="_blank">
+                        <img src="projects/project-3/project-3.png" alt="Bar Chart" class="project-img">
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <a href="https://github.com/gjariwala9/Flask_Blog" class="project-title" target="_blank"><h4>Flask blog</h4></a>
+                    <p class="project-content">User authentication include sending of passward reset link if user forget password. Create, update and delete posts. User account with ability to upload profile pic. Side-bar to view latest posts. Custom errors page.</p>
+                    <a href="https://github.com/gjariwala9/Flask_Blog" class="btn btn-general btn-github" role="button" target="_blank"><i class="fa fa-github"></i><span class="git-text">GitHub Repo</span></a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </section>
+
+    <!-- Footer -->
+    <footer> 
+        <div class="footer-div">
+            <p id="footer-copyright">© Gaurav Jariwala 2020</p>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/gaurav-jariwala-a43573160/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/gjariwala9" target="_blank"><i class="fa fa-github git-footer"></i> </a>
+                <a href="https://scholar.google.com/citations?user=xjpDlJ0AAAAJ&hl=en" target="_blank"><i class="fa fa-graduation-cap"></i></a>
+            </div>
+        </div>  
+    </footer>
+
+
+
+    <!-- jquery -->
+    <script src="js/jquery.js" type="text/javascript"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- FontAwesome -->
+    <script src="js/FontAwesome/fontawesome.min.js" type="text/javascript"></script>
+
+    <!-- Owl Carosuel-->
+    <script src="js/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+
+    <!-- Custom Javascript -->
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
