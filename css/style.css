@@ -349,7 +349,7 @@ ul.navbar-nav li a:hover{
 
 /* Research */
 #research-bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/research.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
