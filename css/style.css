@@ -76,7 +76,7 @@ p{
 ul.navbar-nav li a{
     color: #fff;
     font-family: "Raleway",sans-serif;
-    font-size: 13px;
+    font-size: 0.72rem;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -89,7 +89,6 @@ ul.navbar-nav li a:hover{
 .dropdown-menu{
     background-color: #000;
 }
-
 .white-nav-top{
     background-color: #fff;
     padding: 10px 0;
