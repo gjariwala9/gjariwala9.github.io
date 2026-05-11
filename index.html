@@ -2,217 +2,481 @@
 <html lang="en">
 
 <head>
-
-    <!-- IMPORTANT META TAG -->
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Title -->
-    <title>Gaurav Jariwala</title>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-
-    <!-- IonIcons -->
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Gaurav Jariwala — Senior Machine Learning Engineer</title>
+  <meta name="description"
+    content="Portfolio of Gaurav Jariwala — Senior ML Engineer specializing in LLMs, RAG pipelines, multi-agent systems, and reinforcement learning. 16 U.S. Patents." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-	<!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-	  <a class="navbar-brand" href="index.html">Gaurav Jariwala</a>
-	  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav ml-auto">
-	      	<li class="nav-item active">
-	            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-	        </li>
-	        <li class="nav-item">
-	            <a class="nav-link" href="about.html">About</a>
-	        </li>
-	        <li class="nav-item">
-	            <a class="nav-link" href="projects.html">Projects</a>
-	        </li>
-	        <li class="nav-item">
-	            <a class="nav-link" href="research.html">Publications</a>
-	        </li>
-	        <li class="nav-item">
-	            <a class="nav-link" href="contact.html">Contact</a>
-	        </li>
-	        <li class="nav-item">
-	            <a class="nav-link" href="resume/Resume_Gaurav.pdf" target="_blank">Resume</a>
-	        </li>
-	    </ul>
-	  </div>
-	</nav>
+  <!-- Particle Network Background -->
+  <canvas id="particle-canvas"></canvas>
 
-    <!-- Home -->
-    <section id="home" class="text-center">
-        <div id="home-bg"></div>
-        <div id="overlay"></div>
-        <!-- home-content -->
-        <div id="home-content">
-            <h1 id="home-heading-1">Portfolio</h1>
-            <h2 id="home-heading-2">Hi! My name is <span>Gaurav Jariwala</span></h2>
-            <a href="projects.html" class="btn btn-general btn-home" role="button">View Projects</a>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo"><span class="dot"></span>Gaurav Jariwala</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#patents">Patents</a>
+      <a href="#education">Education</a>
+    </div>
+    <a href="#contact" class="nav-cta">Contact</a>
+    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero hero-centered" id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="container">
+      <div class="hero-centered-content">
+        <h1 class="hero-name">Gaurav Jariwala</h1>
+        <p class="hero-role">Senior Machine Learning Engineer</p>
+        <h2 class="hero-tagline">
+          I build <span class="gradient-text" id="typing-text">intelligent systems</span><span
+            class="typing-cursor"></span> that scale.
+        </h2>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="number" data-count="16">0</span>
+            <span class="label">U.S. Patents</span>
+          </div>
+          <div class="hero-stat">
+            <span class="number" data-count="5" data-suffix="+">0</span>
+            <span class="label">Publications</span>
+          </div>
+          <div class="hero-stat">
+            <span class="number" data-count="4" data-suffix="+">0</span>
+            <span class="label">Years Experience</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+    <div class="hero-scroll"><span>Scroll</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7" />
+      </svg></div>
+  </section>
 
-    <!-- Area of Intrest -->
-    <section id="interest">
-    	<div class="container">
-    		<div class="row">
-                <h1 id="project-heading" class="col-md-12 text-center">Areas of Interest</h1>
+  <!-- ABOUT ME -->
+  <section id="about">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          About Me
+        </div>
+        <h2 class="section-title">A Bit About Me</h2>
+      </div>
+      <div class="about-layout reveal">
+        <div class="about-content">
+          <p>Hey there! I'm Gaurav — a Senior Machine Learning Engineer who genuinely loves building things that think.
+            Whether it's a multi-agent system that hunts for deals while I sleep, or an LSTM architecture that learns to
+            play like a human, I get most excited when a complex idea finally clicks into a working system.</p>
+          <p>My journey started with a curiosity about how machines can learn patterns the way we do, and that curiosity
+            hasn't slowed down. Over the past few years, I've had the chance to architect end-to-end ML pipelines at
+            <strong>IGT</strong>, co-invent <strong>16 U.S. patents</strong>, and dive deep into the world of LLMs, RAG,
+            and agentic AI. I've published research at conferences like <strong>CANAI</strong> and <strong>IEEE
+              INOCON</strong>, and I hold a Master's in Computer Science from <strong>Dalhousie University</strong>.
+          </p>
+          <p>What drives me is the full picture — not just training a model, but owning the entire lifecycle from messy
+            data to a deployed system that actually delivers value. I'm equally comfortable fine-tuning a model with
+            QLoRA as I am designing the orchestration layer that ties seven agents together. If there's a hard problem
+            at the intersection of AI and real-world impact, I want to be working on it.</p>
+        </div>
+        <div class="about-photo">
+          <div class="about-photo-frame"></div>
+          <div class="about-photo-img">
+            <img src="profile_pic.jpeg" alt="Gaurav Jariwala" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5" />
+            <path d="M2 12l10 5 10-5" />
+          </svg>Technical Stack</div>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Full-stack ML expertise from research to production deployment.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-card-header"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 01-2 2h-4a2 2 0 01-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7z" />
+              <path d="M10 21h4" />
+            </svg>
+            <h3>Generative AI &amp; LLMs</h3>
+          </div>
+          <div class="skill-tags"><span class="skill-tag">LLMs</span><span class="skill-tag">RAG</span><span
+              class="skill-tag">Agentic AI</span><span class="skill-tag">Multi-Agent Systems</span><span
+              class="skill-tag">LoRA / QLoRA</span><span class="skill-tag">Prompt Engineering</span><span
+              class="skill-tag">FAISS</span><span class="skill-tag">Pinecone</span><span
+              class="skill-tag">ChromaDB</span><span class="skill-tag">MCP</span></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-card-header"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+            </svg>
+            <h3>Machine Learning &amp; AI</h3>
+          </div>
+          <div class="skill-tags"><span class="skill-tag">Reinforcement Learning</span><span
+              class="skill-tag">NLP</span><span class="skill-tag">Deep Learning</span><span
+              class="skill-tag">LSTMs</span><span class="skill-tag">Transformers</span><span class="skill-tag">Sequence
+              Modeling</span><span class="skill-tag">Predictive Modeling</span><span class="skill-tag">Clustering</span>
+          </div>
+        </div>
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-card-header"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 7h16M4 12h16M4 17h10" />
+              <path d="M18 17l3-3-3-3" />
+            </svg>
+            <h3>Libraries &amp; Frameworks</h3>
+          </div>
+          <div class="skill-tags"><span class="skill-tag">PyTorch</span><span class="skill-tag">TensorFlow</span><span
+              class="skill-tag">Hugging Face</span><span class="skill-tag">LangChain</span><span
+              class="skill-tag">LangGraph</span><span class="skill-tag">LlamaIndex</span><span
+              class="skill-tag">Scikit-Learn</span><span class="skill-tag">PySpark</span></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-card-header"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" />
+            </svg>
+            <h3>Cloud, Data &amp; MLOps</h3>
+          </div>
+          <div class="skill-tags"><span class="skill-tag">AWS</span><span class="skill-tag">GCP</span><span
+              class="skill-tag">Snowflake</span><span class="skill-tag">Databricks</span><span
+              class="skill-tag">Docker</span><span class="skill-tag">MLflow</span><span
+              class="skill-tag">FastAPI</span><span class="skill-tag">Git</span></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-card-header"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 20V10M12 20V4M6 20v-6" />
+            </svg>
+            <h3>Visualization &amp; Analytics</h3>
+          </div>
+          <div class="skill-tags"><span class="skill-tag">Tableau</span><span class="skill-tag">Plotly</span><span
+              class="skill-tag">Dash</span><span class="skill-tag">Matplotlib</span><span
+              class="skill-tag">Seaborn</span></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-card-header"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+              <line x1="14" y1="4" x2="10" y2="20" />
+            </svg>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">SQL</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="7" width="20" height="14" rx="2" />
+            <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
+          </svg>Career</div>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">Building production ML systems and expanding intellectual property.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Data Scientist III — Advanced Research &amp; Innovation Team</div>
+                <div class="timeline-company">International Game Technology (IGT)</div>
+              </div>
+              <div class="timeline-meta"><span>Feb 2023 – Feb 2026</span><span>Moncton, NB, Canada</span></div>
             </div>
-            <div class="row">
-                <p class="col-md-12 text-center">Some things I love working on.</p>
+            <ul class="timeline-bullets">
+              <li><strong>End-to-End ML Pipeline Ownership:</strong> Architected a zero-data-leakage architecture
+                capable of dynamically processing complex JSON game configurations and large-scale CSV session logs,
+                streamlining integration for future game development platforms.</li>
+              <li><strong>Model Prototyping &amp; Experimentation:</strong> Designed a causal LSTM-based sequence model
+                with custom encoders to simulate diverse human player behaviors, improving model performance by 20%.
+                Reduced testing cycles by 3 months and saved ~$50K per game.</li>
+              <li><strong>IP &amp; Innovation:</strong> Co-invented and filed 16 U.S. patents (2 granted, 14 pending)
+                focused on electronic gaming machine innovation, AI-metaverse integration, and player behavior modeling.
+              </li>
+              <li><strong>Mentorship:</strong> Supervised a University of New Brunswick student researcher, providing
+                guidance on ML methodologies and overseeing project milestones.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-role">Research Assistant — DNLP Lab</div>
+                <div class="timeline-company">Dalhousie University</div>
+              </div>
+              <div class="timeline-meta"><span>Jan 2022 – Dec 2022</span><span>Halifax, NS, Canada</span></div>
             </div>
+            <ul class="timeline-bullets">
+              <li><strong>Agentic Modeling &amp; Simulation:</strong> Engineered virtual player models using
+                state-of-the-art reinforcement learning (PPO, ACKTR) to mimic complex Electronic Gaming Machine
+                behaviors.</li>
+              <li><strong>Unsupervised Learning Workflows:</strong> Segmented large-scale gaming session data using
+                K-means clustering to identify diverse player archetypes for RL termination states.</li>
+              <li><strong>Explainable AI:</strong> Applied Interpretable AI methodologies to evaluate session
+                attributes, isolating key behavioral factors defining positive user experiences and responsible gaming
+                standards.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	    	<div class="card-deck">
-				<div class="card">
-					<img class="card-img-top AOI-img" src="img/AOI/ml.png" alt="Card image cap">
-					<div class="card-body">
-					  <h5 class="card-title">Machine Learning</h5>
-					  <p class="card-text">Machine learning is more than an API call to scikit-learn. I love the implementation as well as the math and theory.</p>
-					</div>
-				</div>
-				<div class="card">
-					<img class="card-img-top AOI-img" src="img/AOI/dl.png" alt="Card image cap">
-					<div class="card-body">
-					  <h5 class="card-title">Deep Learning</h5>
-					  <p class="card-text">Human brain working is quite intricate. Amazingly, the computer can mimic that to some extent.</p>
-					</div>
-				</div>
-				<div class="card">
-					<img class="card-img-top AOI-img" src="img/AOI/nlp.png" alt="Card image cap">
-					<div class="card-body">
-					  <h5 class="card-title">NLP</h5>
-					  <p class="card-text">I have done some projects to apply NLP techniques to make sense of the motivations behind human interactions.</p>
-					</div>
-				</div>
-			</div>
-			<div class="card-deck">
-				<div class="card">
-					<img class="card-img-top AOI-img" src="img/AOI/da.png" alt="Card image cap">
-					<div class="card-body">
-					  <h5 class="card-title">Data Analysis</h5>
-					  <p class="card-text">I love telling a story. Making a beautiful and compelling presentation is one of my favorite skills.</p>
-					</div>
-				</div>
-				<div class="card">
-					<img class="card-img-top AOI-img" src="img/AOI/md.png" alt="Card image cap">
-					<div class="card-body">
-					  <h5 class="card-title">Model Deployment</h5>
-					  <p class="card-text">I implement machine learning models in real world production systems using REST APIs.</p>
-					</div>
-				</div>
-				<div class="card">
-					<img class="card-img-top AOI-img" src="img/AOI/wd.png" alt="Card image cap">
-					<div class="card-body">
-					  <h5 class="card-title">Web Development</h5>
-					  <p class="card-text">I love web development because I can reach wider users over the internet.</p>
-					</div>
-				</div>
-			</div>
-			<br><br>
-		</div>
-    </section>
-
-
-    <!-- Projects -->
-    <section id="project">
-    	<div class="container">
-    		<div class="row">
-                <h1 id="project-heading" class="col-md-12 text-center">Recent Projects</h1>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+            <polyline points="22 4 12 14.01 9 11.01" />
+          </svg>Featured Work</div>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">End-to-end intelligent systems built from scratch.</p>
+      </div>
+      <div class="project-featured reveal">
+        <div class="project-featured-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            width="14" height="14">
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+          </svg>Featured Project</div>
+        <h3>Autonomous Multi-Agent Deal Scanner</h3>
+        <p class="project-subtitle">"The Price Is Right" — An autonomous 7-agent AI system managed by a centralized
+          Planning Agent that monitors RSS feeds, maintains state memory, and triggers mobile push notifications for
+          validated e-commerce deals.</p>
+        <div class="project-details">
+          <div class="project-detail">
+            <div class="project-detail-header"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l2 2 4-4" />
+              </svg>
+              <h4>End-to-End Orchestration</h4>
             </div>
-            <div class="row">
-                <p class="col-md-12 text-center">Here are some recent projects done by me.</p>
+            <p>Engineered an autonomous, 7-agent AI system managed by a centralized Planning Agent that actively
+              monitors RSS feeds, maintains state memory, and triggers mobile push notifications for validated
+              e-commerce deals.</p>
+          </div>
+          <div class="project-detail">
+            <div class="project-detail-header"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4" />
+              </svg>
+              <h4>Model Optimization &amp; Fine-Tuning</h4>
             </div>
-            <div class="row each-project">
-            	<div class="col-md-5">
-            		<a href="https://github.com/gjariwala9/DS_Salary_Predictor" target="_blank">
-            			<img src="projects/project-1/positions_by_state.png" alt="Bar Chart" class="project-img">
-            		</a>
-            	</div>
-            	<div class="col-md-7">
-            		<a href="https://github.com/gjariwala9/DS_Salary_Predictor" class="project-title" target="_blank"><h4>Data Science Salary Estimator</h4></a>
-            		<p class="project-content">Created a tool that estimates data science salaries (MAE ~ $ 11K) to help data scientists negotiate their income when they get a job. Scraped over 1000 job descriptions from glassdoor using python and selenium Engineered features from the text of each job description to quantify the value companies put on python, excel, aws, and spark. Optimized Linear, Lasso, and Random Forest Regressors using GridsearchCV to reach the best model.</p>
-            		<a href="https://github.com/gjariwala9/DS_Salary_Predictor" class="btn btn-general btn-github" role="button" target="_blank"><i class="fa fa-github"></i><span class="git-text">GitHub Repo</span></a>
-            	</div>
+            <p>Fine-tuned an open-source LLM using QLoRA on a Hugging Face dataset to build a specialized
+              price-estimation agent, achieving frontier-model performance with heavily reduced compute requirements.
+            </p>
+          </div>
+          <div class="project-detail">
+            <div class="project-detail-header"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+              <h4>Ensemble Architecture &amp; RAG</h4>
             </div>
-            <div class="row each-project">
-            	<div class="col-md-5">
-            		<a href="https://github.com/gjariwala9/Analysis-and-Prediction-of-Stock-market-trends-Using-Deep-Learning" target="_blank">
-            			<img src="projects/project-2/project-2.png" alt="Bar Chart" class="project-img">
-            		</a>
-            	</div>
-            	<div class="col-md-7">
-            		<a href="https://github.com/gjariwala9/Analysis-and-Prediction-of-Stock-market-trends-Using-Deep-Learning" class="project-title" target="_blank"><h4>Analysis and Prediction of stock market trends</h4></a>
-            		<p class="project-content">The project is desgined as 2nd opinion tool for stock market investments strategy. The users needs to do his/her own research on a stock or a company before using this product. This is a 3 step product: STEP 1: Predicting stock value for tomorrow by analysing historic data of a particular stock. Recurrent Neural Network (RNN) model is used for this system. Stock historic data is downloaded from yahoo finance. STEP 2: Verify the trend of the stock based on external factor and news which cannot be analysed using historic data. Both Support Vector Machine and Naive Bayes system are used. News headlines are web scrapped from moneycontrol.com. STEP 3: Use Risk Analysis System to find out to which cluster your stock belongs to and check the movement of other stock in that cluster, since stocks in a particular cluster are related to each other their movement is interdependent. Kmeans clustering is used to create this module. Data is 10 year historic data for (Open price - Close price) for a particular day.</p>
-            		<a href="https://github.com/gjariwala9/Analysis-and-Prediction-of-Stock-market-trends-Using-Deep-Learning" class="btn btn-general btn-github" role="button" target="_blank"><i class="fa fa-github"></i><span class="git-text">GitHub Repo</span></a>
-            	</div>
-            </div>
-            <div class="row each-project">
-            	<div class="col-md-5">
-            		<a href="https://github.com/gjariwala9/Flask_Blog" target="_blank">
-            			<img src="projects/project-3/project-3.png" alt="Bar Chart" class="project-img">
-            		</a>
-            	</div>
-            	<div class="col-md-7">
-            		<a href="https://github.com/gjariwala9/Flask_Blog" class="project-title" target="_blank"><h4>Flask blog</h4></a>
-            		<p class="project-content">User authentication include sending of passward reset link if user forget password. Create, update and delete posts. User account with ability to upload profile pic. Side-bar to view latest posts. Custom errors page.</p>
-            		<a href="https://github.com/gjariwala9/Flask_Blog" class="btn btn-general btn-github" role="button" target="_blank"><i class="fa fa-github"></i><span class="git-text">GitHub Repo</span></a>
-            	</div>
-            </div>
-            <div class="row">
-            	<a href="projects.html" class="btn btn-general btn-project" role="button">See Projects</a>
-            </div>
-    	</div>
- 		<br><br>
-    </section>
+            <p>Architected an Ensemble Agent that aggregates and weighs price predictions across three distinct
+              pipelines: the QLoRA Specialist, a Neural Network, and a RAG Frontier Agent supplied with contextual
+              product similarities.</p>
+          </div>
+        </div>
+        <div class="project-tech"><span>LangGraph</span><span>QLoRA</span><span>RAG</span><span>Hugging
+            Face</span><span>FAISS</span><span>Multi-Agent</span><span>Python</span><span>FastAPI</span></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-	<footer> 
-        <div class="footer-div">
-        	<p id="footer-copyright">© Gaurav Jariwala 2020</p>
-        	<div class="icons">
-	  			<a href="https://www.linkedin.com/in/gaurav-jariwala-a43573160/" target="_blank"><i class="fa fa-linkedin"></i></a>
-	            <a href="https://github.com/gjariwala9" target="_blank"><i class="fa fa-github git-footer"></i> </a>
-	            <a href="https://scholar.google.com/citations?user=xjpDlJ0AAAAJ&hl=en" target="_blank"><i class="fa fa-graduation-cap"></i></a>
-	  		</div>
-        </div>  
-    </footer>
+  <!-- PATENTS & PUBLICATIONS -->
+  <section id="patents">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+          </svg>Intellectual Property</div>
+        <h2 class="section-title">Patents &amp; Publications</h2>
+        <p class="section-subtitle">A strong patent portfolio spanning AI, metaverse, and gaming innovation.</p>
+      </div>
+      <div class="patents-summary reveal">
+        <div class="patents-summary-item"><span class="num green" data-count="2">0</span>
+          <div class="txt">U.S. Patents<br />Granted</div>
+        </div>
+        <div class="patents-summary-item"><span class="num blue" data-count="14">0</span>
+          <div class="txt">U.S. Patents<br />Pending</div>
+        </div>
+        <div class="patents-summary-item"><span class="num green" data-count="5">0</span>
+          <div class="txt">Academic<br />Publications</div>
+        </div>
+      </div>
+      <div class="patents-grid">
+        <div class="patent-card reveal reveal-delay-1">
+          <div class="patent-status granted"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" width="12" height="12">
+              <path d="M20 6L9 17l-5-5" />
+            </svg>Granted</div>
+          <h3>Shared immersion features among real-world players in a shared virtual gaming environment</h3>
+          <p class="patent-id">U.S. Patent 12548270B2</p>
+          <p class="patent-year">Granted 2026</p>
+        </div>
+        <div class="patent-card reveal reveal-delay-2">
+          <div class="patent-status granted"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" width="12" height="12">
+              <path d="M20 6L9 17l-5-5" />
+            </svg>Granted</div>
+          <h3>Gaming avatars based on aggregated information across metaverse platforms</h3>
+          <p class="patent-id">U.S. Patent 12505600B2</p>
+          <p class="patent-year">Granted 2025</p>
+        </div>
+        <div class="patent-card reveal reveal-delay-3">
+          <div class="patent-status pending"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              width="12" height="12">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>14 Pending</div>
+          <h3>Additional patent applications covering cryptographic token integration, metaverse gaming, AI-driven
+            behavioral frameworks, and biometric sensor feedback</h3>
+          <p class="patent-id">14 Pending U.S. Patent Applications</p>
+          <p class="patent-year">Filed 2023 – 2026</p>
+        </div>
+      </div>
+      <h3 class="section-title reveal" style="font-size:1.4rem;margin-top:56px">Academic Publications</h3>
+      <div class="pub-list">
+        <div class="pub-item reveal">
+          <div class="pub-venue">CANAI 2023 — Canadian Conference on Artificial Intelligence</div>
+          <div class="pub-title">Mimicking Electronic Gaming Machine Player Behavior Using Reinforcement Learning</div>
+          <div class="pub-authors"><strong>G. Jariwala</strong>, V. Keselj</div>
+        </div>
+        <div class="pub-item reveal">
+          <div class="pub-venue">IEEE INOCON 2020 — International Conference for Innovation in Technology</div>
+          <div class="pub-title">Sentimental Analysis of News Headlines for Stock Market</div>
+          <div class="pub-authors"><strong>G. Jariwala</strong>, H. Agarwal, V. Jadhav</div>
+        </div>
+        <div class="pub-item reveal">
+          <div class="pub-venue">IC4S 2019 — International Conference on Computing, Communications, and Cyber-Security
+          </div>
+          <div class="pub-title">Analysis and Prediction of Stock Market Trends Using Deep Learning</div>
+          <div class="pub-authors">H. Agarwal, <strong>G. Jariwala</strong>, A. Shah</div>
+        </div>
+        <div class="pub-item reveal">
+          <div class="pub-venue">ICIDCA 2019 — International Conference on Innovative Data Communication Technologies
+            and Application
+          </div>
+          <div class="pub-title">A Neural Network Based Approach for Operating System</div>
+          <div class="pub-authors"><strong>G. Jariwala</strong>, H. Agarwal</div>
+        </div>
+        <div class="pub-item reveal">
+          <div class="pub-venue">ICICCT 2019 — International Conference on Inventive Communication and Computational
+            Technologies
+          </div>
+          <div class="pub-title">Analysis of Process Scheduling Using Neural Network in Operating System</div>
+          <div class="pub-authors">H. Agarwal, <strong>G. Jariwala</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+            <path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5" />
+          </svg>Education</div>
+        <h2 class="section-title">Academic Background</h2>
+      </div>
+      <div class="edu-cards">
+        <div class="edu-card reveal reveal-delay-1">
+          <h3>Dalhousie University</h3>
+          <div class="degree">Master in Computer Science</div>
+          <div class="edu-date">Sep 2021 – Dec 2022 · Halifax, NS, Canada</div>
+          <p><strong>GPA:</strong> 4.15 / 4.3<br /><strong>Thesis:</strong> Identifying Factors Influencing Electronic
+            Gaming Machine Player Behavior Using Interpretable AI and Mimicking Player Behavior Using Reinforcement
+            Learning.<br /><strong>Award:</strong> Research Scholarship (2022)</p>
+        </div>
+        <div class="edu-card reveal reveal-delay-2">
+          <h3>Gujarat Technological University</h3>
+          <div class="degree">B.E. in Computer Engineering</div>
+          <div class="edu-date">Sep 2016 – May 2020 · Ahmedabad, GJ, India</div>
+          <p><strong>GPA:</strong> 8.75 / 10</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- jquery -->
-    <script src="js/jquery.js" type="text/javascript"></script>
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <h2>Let's Connect</h2>
+          <p>I'm always interested in discussing ML research, agentic AI architectures, or new opportunities.</p>
+          <p style="margin-top:12px;color:var(--text-muted);font-size:.85rem">gaurav.d.jariwala@gmail.com</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/gjariwala9" target="_blank" rel="noopener noreferrer" class="footer-link"
+            aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg></a>
+          <a href="https://www.linkedin.com/in/gjariwala9/" target="_blank" rel="noopener noreferrer"
+            class="footer-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg></a>
+          <a href="https://scholar.google.com/citations?user=xjpDlJ0AAAAJ&hl=en" target="_blank"
+            rel="noopener noreferrer" class="footer-link" aria-label="Google Scholar"><svg viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z" />
+            </svg></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Gaurav Jariwala. All rights reserved.</p>
+        <p>Built with AI.</p>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
-
-    <!-- FontAwesome -->
-    <script src="js/FontAwesome/fontawesome.min.js" type="text/javascript"></script>
-
-    <!-- Owl Carosuel-->
-    <script src="js/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
-
-    <!-- Custom Javascript -->
-    <script src="js/script.js" type="text/javascript"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
